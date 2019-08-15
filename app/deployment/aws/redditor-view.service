@@ -1,0 +1,14 @@
+[Unit]
+Description=imdb analyzer
+
+[Service]
+WorkingDirectory=/home/ubuntu/imdb-web
+ExecStart=/usr/bin/make run_app
+Restart=on-failure
+
+# Specifies which signal to use when killing a service. Defaults to SIGTERM.
+# SIGHUP gives parity time to exit cleanly before SIGKILL (default 90s)
+KillSignal=SIGHUP
+
+[Install]
+WantedBy=default.target

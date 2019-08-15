@@ -1,0 +1,6 @@
+ipython
+arrow
+flask
+dash
+pandas
+sd-material-ui
